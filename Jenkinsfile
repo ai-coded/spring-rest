@@ -16,7 +16,6 @@ pipeline {
     }
     stage("Evaluate Master") {
       when {
-        // skip this stage unless on Master branch
         branch "main"
       }
       steps {
